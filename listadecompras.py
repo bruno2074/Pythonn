@@ -1,12 +1,20 @@
+"""
+
+Todas as variáveis nos comentários estão entre aspas ("x")
+"""
 import os
 
 lista = []
 
+# cria uma condição que repete infinitamente até ser quebrada por algum "break"
 while True:
+    # pede opcao 
     print('Selecione uma opção')
+    # recebe opcao
     opcao = input('[i]nserir [a]pagar [l]istar: ')
-
+    # se opcao for [i]:
     if opcao == 'i':
+        # apaga terminal e pede "valor"
         os.system('clear')
         valor = input('Valor: ')
         lista.append(valor)
